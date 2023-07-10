@@ -14,6 +14,7 @@ namespace CustomerCRUDWebApp.Domain.CustomerManagement.Configurations
         public void Configure(EntityTypeBuilder<Customer> builder)
         {
             builder.HasKey(c => c.CustomerID);
+            builder.HasQueryFilter(x => x.DateDeleted == null);
         }
     }
 }

@@ -23,6 +23,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<CustomerManagementDBContext>
+(o => o.UseInMemoryDatabase("CustomerDB"));
 builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
 {
     builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
@@ -31,8 +33,7 @@ var assembly = AppDomain.CurrentDomain.Load("CustomerCRUDWebApp.Application");
 builder.Services.AddMediatR(assembly);
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddTransient<CustomerManagementDBContext>();
-builder.Services.AddDbContext<CustomerManagementDBContext>
-(o => o.UseInMemoryDatabase("CustomerDB"));
+
 
 
 var app = builder.Build();

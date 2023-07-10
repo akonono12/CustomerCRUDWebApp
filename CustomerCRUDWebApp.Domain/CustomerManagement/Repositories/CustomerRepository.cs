@@ -28,7 +28,7 @@ namespace CustomerCRUDWebApp.Domain.CustomerManagement.Repositories
             _dbContext.Customers.Add(customer);
         }
 
-        public async void SaveChangesAsync()
+        public async Task SaveChangesAsync()
         {
             await _dbContext.SaveChangesAsync();
         }

@@ -11,7 +11,7 @@ namespace CustomerCRUDWebApp.Domain.CustomerManagement.Interfaces
     {
         IQueryable<Customer> GetAllCustomers();
         void AddCustomer(Customer customer);
-        void SaveChangesAsync();
+        Task SaveChangesAsync();
 
     }
 }

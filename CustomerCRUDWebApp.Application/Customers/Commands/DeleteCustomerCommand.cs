@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustomerCRUDWebApp.Application.Customer.Commands
+namespace CustomerCRUDWebApp.Application.Customers.Commands
 {
     public class DeleteCustomerCommand:IRequest<bool>
     {

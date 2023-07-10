@@ -14,8 +14,8 @@ namespace CustomerCRUDWebApp.Domain.CustomerManagement.Entities
         public string Address { get; private set; }
         public string ContactNumber { get; private set; }
         public DateTime DateCreated { get; private set; }
-        public DateTime DateUpdated { get; private  set; }
-        public DateTime DateDeleted { get; private set; }
+        public DateTime? DateUpdated { get; private  set; }
+        public DateTime? DateDeleted { get; private set; }
         private Customer()
         {
 
