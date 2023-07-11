@@ -27,9 +27,11 @@ export class CustomerComponent implements OnInit,AfterViewInit {
 
   private addCustomer(){
     this.customerService.addCustomer(this.customer).subscribe(data => {
-      if(data){
+      if(data != this.GUIDEMPTY ){
         alert("Successfully added");
         this.customerTable.loadTable();
+      }else{
+        alert("Something wrong while adding.Please contact the administrator.")
       }
     })
   }
@@ -49,6 +51,10 @@ export class CustomerComponent implements OnInit,AfterViewInit {
     if(this.customer.customerID != this.GUIDEMPTY){
       this.updateCustomer();
     }else{
+      if(!this.customer.firstName || !this.customer.lastName){
+        alert("empty field either first name or last name.Please enter a value.")
+        return;
+      }
       this.addCustomer();
     }
     this.customer = new Customer();

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerCRUDWebApp.Web", "CustomerCRUDWebApp\CustomerCRUDWebApp.Web.csproj", "{76AA01F1-92F3-40A7-9EBA-05AAA59C572B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerCRUDWebApp.Web", "CustomerCRUDWebApp\CustomerCRUDWebApp.Web.csproj", "{76AA01F1-92F3-40A7-9EBA-05AAA59C572B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerCRUDWebApp.Application", "CustomerCRUDWebApp.Application\CustomerCRUDWebApp.Application.csproj", "{0F1509D6-FEF9-47F5-ACF3-8861B63AA261}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerCRUDWebApp.Application", "CustomerCRUDWebApp.Application\CustomerCRUDWebApp.Application.csproj", "{0F1509D6-FEF9-47F5-ACF3-8861B63AA261}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerCRUDWebApp.Domain", "CustomerCRUDWebApp.Domain\CustomerCRUDWebApp.Domain.csproj", "{AC57C24C-8977-47AE-87B8-9BFF4113806C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerCRUDWebApp.Domain", "CustomerCRUDWebApp.Domain\CustomerCRUDWebApp.Domain.csproj", "{AC57C24C-8977-47AE-87B8-9BFF4113806C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerCRUDWebApp.Common", "CustomerCRUDWebApp.Common\CustomerCRUDWebApp.Common.csproj", "{F5BBADAC-43BD-4C70-B96C-1A527300AED8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerCRUDWebApp.Common", "CustomerCRUDWebApp.Common\CustomerCRUDWebApp.Common.csproj", "{F5BBADAC-43BD-4C70-B96C-1A527300AED8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
